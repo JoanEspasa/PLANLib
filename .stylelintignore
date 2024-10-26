@@ -1,0 +1,14 @@
+node_modules/
+
+#Raw
+assets/css/bootstrap.min.css
+assets/css/bootstrap.min.css.map
+assets/js/bootstrap.bundle.min.js
+assets/js/bootstrap.bundle.min.js.map
+
+
+#Compiled Version
+_site/assets/css/bootstrap.min.css
+_site/assets/css/bootstrap.min.css.map
+_site/assets/js/bootstrap.bundle.min.js
+_site/assets/js/bootstrap.bundle.min.js.map
