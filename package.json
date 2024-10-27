@@ -6,14 +6,28 @@
     "@eslint/js": "^9.13.0",
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
     "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "mocha": "^10.7.3",
     "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
     "stylelint": "^16.10.0",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-prettier": "^5.0.2"
   },
   "scripts": {
     "stylelint": "npx stylelint \"**/*.css\" -c \"./.stylelintrc.json\" -i \"./.stylelintignore\" ",
     "purgecss": "purgecss --css _site/assets/css/output.css --content _site/**/*.css --output _site/assets/css/",
-    "serve": "bundle exec jekyll build && bundle exec jekyll serve"
+    "build": "bundle exec jekyll build",
+    "test": "mocha",
+    "eslint": "npx eslint",
+    "serve": "bundle exec jekyll build && bundle exec jekyll serve",
+    "prepare": "husky && husky install"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix"
   }
 }

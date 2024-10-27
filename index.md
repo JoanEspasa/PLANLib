@@ -1,4 +1,4 @@
 ---
 title: "Test"
-layout: "home"
+layout: home
 ---

@@ -1,0 +1,7 @@
+npm run stylelint
+npm run eslint
+npx prettier . --write
+npx prettier . --check
+npm run build
+htmlproofer './_site' --ignore-files '/node_modules/'
+npm run test

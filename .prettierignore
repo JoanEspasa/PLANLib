@@ -1,0 +1,9 @@
+*.yml
+assets/css/bootstrap.min.css
+assets/css/bootstrap.min.css.map
+assets/js/bootstrap.bundle.min.js
+assets/js/bootstrap.bundle.min.js.map
+assets/css/reset.css
+**.json
+*.config.mjs
+*.config.js
