@@ -5,3 +5,4 @@ npx prettier . --check
 npm run build
 htmlproofer './_site' --ignore-files '/node_modules/'
 npm run test
+
