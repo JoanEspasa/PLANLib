@@ -13,6 +13,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
+          start: npm run serve
+          # quote the url to be safe against YML parsing surprises
+          wait-on: 'http://127.0.0.1:4000/PLANLib/'
 
 
