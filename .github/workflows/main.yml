@@ -7,11 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Print Working Directory
-        run: pwd
-
-      - name: LS
-        run: ls
+      - name: Dependencies Install
+        run: "bundle install"
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
