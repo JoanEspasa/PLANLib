@@ -1,9 +1,9 @@
 describe("template spec", () => {
-  it("passes", () => {
-    cy.visit("https://joanespasa.github.io/PLANLib/");
+  beforeEach(()=>{
+    cy.visit('https://joanespasa.github.io/PLANLib/');
   });
 
   it("should fail", () => {
-    expect(false).to.equal(true);
+    cy.get('.peanuts').should('contain','Random')
   });
 });

@@ -37,6 +37,7 @@ liquid:
   strict_filters: true
 
 exclude:
+  - cypress
   - vendor
   - README.md
   - eslint.config.mjs
