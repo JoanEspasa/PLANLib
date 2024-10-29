@@ -1,4 +1,4 @@
 ---
-title: "Test"
+title: "Random"
 layout: home
 ---

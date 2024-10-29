@@ -36,6 +36,11 @@ liquid:
   strict_filters: true
 
 exclude:
+  - .husky
+  - .github
+  - .idea
+  - cypress
+  - vendor
   - README.md
   - eslint.config.mjs
   - package.json
