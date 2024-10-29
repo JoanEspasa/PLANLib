@@ -37,6 +37,7 @@ liquid:
   strict_filters: true
 
 exclude:
+  - vendor
   - README.md
   - eslint.config.mjs
   - package.json

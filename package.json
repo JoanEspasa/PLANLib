@@ -23,7 +23,7 @@
   "scripts": {
     "stylelint": "npx stylelint \"**/*.css\" -c \"./.stylelintrc.json\" -i \"./.stylelintignore\" ",
     "purgecss": "purgecss --css _site/assets/css/output.css --content _site/**/*.css --output _site/assets/css/",
-    "build-jekill": "bundle exec jekyll build",
+    "build": "bundle exec jekyll build",
     "cypress": "npx cypress open",
     "test": "mocha",
     "eslint": "npx eslint",
