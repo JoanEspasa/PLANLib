@@ -1,0 +1,43 @@
+**<span style="color: #f8f9fa; font-size: 15px">Initial Analysis for the Design of the Page</span>**
+
+- **<span style="color: #f8f9fa; font-size: 15px"><u>Design Elements</u></span>**
+  - **<span style="color: #f8f9fa; font-size: 15px">Needs support for dark mode</span>**
+    - <span style="color: #f8f9fa; font-size: 15px">It currently looks a bit too ugly. It should be easy to achieve using TailwindCSS</span>
+  - **<span style="color: #f8f9fa; font-size: 15px">Needs a better homepage</span>**
+  - **<span style="color: #f8f9fa; font-size: 15px">Needs a NavBar</span>**
+    - <span style="color: #f8f9fa; font-size: 15px">The current one does not look really good and it just showcases the path. I can build something better </span>
+  - **<span style="color: #f8f9fa; font-size: 15px">I like the way in which it categorises the problems by problem category.</span>** 
+    - <span style="color: #f8f9fa; font-size: 15px">I’m not sure how I would do this but I want to replicate it. </span>
+    - <span style="color: #f8f9fa; font-size: 15px">I do not like the way in which it displays them though. I feel the ID and Title parameters do not make much sense</span>
+  - **<span style="color: #f8f9fa; font-size: 15px">I like the stats in the main page, will definitely copy that.</span>**
+  - **<span style="color: #f8f9fa; font-size: 15px">Mostly just collections of stuff, I can use FB and Grid to try to show more details of each one of the problems before actually clicking on them</span>**
+- **<span style="color: #f8f9fa; font-size: 15px"><u>Organisation of the Files and Library System</u></span>**
+  - <span style="color: #f8f9fa; font-size: 15px">For now, I see 2 distributions that I can use to organise them</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Category:</span>** <span style="color: #f8f9fa; font-size: 15px">Seems like the obvious choice and I like how it is simple but powerful. It would be pretty easy to implement.</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Based on how many have been placed on the library so far:</span>** <span style="color: #f8f9fa; font-size: 15px">Not as powerful and for me it makes no sense to do this.</span>
+    - <span style="color: #f8f9fa; font-size: 15px">Based on the language that has been used to construct the model</span>
+  - <span style="color: #f8f9fa; font-size: 15px">As mentioned by Joan and looking at the page, each problem is composed by:</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Name of the Problem:</span>** <span style="color: #f8f9fa; font-size: 15px">Text</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Author:</span>** <span style="color: #f8f9fa; font-size: 15px">Text</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Description:</span>** <span style="color: #f8f9fa; font-size: 15px">Text</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Variations:</span>** <span style="color: #f8f9fa; font-size: 15px">They seem to be related with the competition tracks.</span>
+      - <span style="color: #f8f9fa; font-size: 15px">Every problem has their variations. These can be more than one: </span>
+        - **<span style="color: #f8f9fa; font-size: 15px">Models:</span>** <span style="color: #f8f9fa; font-size: 15px">Stored as files. They can be multiple.</span>
+          - <span style="color: #f8f9fa; font-size: 15px">Language in which the model is coded. Single value</span>
+          - **<span style="color: #f8f9fa; font-size: 15px">Instances:</span>** <span style="color: #f8f9fa; font-size: 15px">Group of files. They are packaged as a zip file. Need to keep track of the path.</span>
+        - <span style="color: #f8f9fa; font-size: 15px">Description of the Variation</span>
+        - **<span style="color: #f8f9fa; font-size: 15px">Generator</span>**
+          - <span style="color: #f8f9fa; font-size: 15px">They produce the possible available actions with an given state </span>
+          - <span style="color: #f8f9fa; font-size: 15px">Displayed as a downloadable file. Dunno if there are ways to preview it.</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">Year in which it was used</span>**
+      - <span style="color: #f8f9fa; font-size: 15px">They can be generated openly </span>
+        - <span style="color: #f8f9fa; font-size: 15px">If generated through competition, you will probably need a URL and the actual year in which it was created</span>
+    - **<span style="color: #f8f9fa; font-size: 15px">References:</span>**
+      - <span style="color: #f8f9fa; font-size: 15px">Paper citations might also be necessary. These are obtained for the problem </span>
+      - <span style="color: #f8f9fa; font-size: 15px">There can be 2 types of citations:</span>
+        - <span style="color: #f8f9fa; font-size: 15px">BibTex which are:</span>
+          - <span style="color: #f8f9fa; font-size: 15px">Constant page reference</span>
+          - <span style="color: #f8f9fa; font-size: 15px">Compile-Time reference for the problem.</span>
+- **<span style="color: #f8f9fa; font-size: 15px"><u>Questions</u></span>**
+  - <span style="color: #f8f9fa; font-size: 15px">Do the ID and Title of the problems really matter here? I feel like they make no sense </span>
+    - <span style="color: #f8f9fa; font-size: 15px">The IDs have to stay for reference purposes.</span>
