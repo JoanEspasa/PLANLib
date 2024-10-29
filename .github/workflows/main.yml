@@ -10,6 +10,9 @@ jobs:
       - name: Print Working Directory
         run: pwd
 
+      - name: LS
+        run: ls
+
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
