@@ -75,5 +75,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
+          build: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
           start: npm start
