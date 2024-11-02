@@ -52,6 +52,7 @@ exclude:
   - "*.config.js"
   - Gemfile
   - Gemfile.lock
+  - "Initial Analysis.md"
 
 # Build settings
 theme:
