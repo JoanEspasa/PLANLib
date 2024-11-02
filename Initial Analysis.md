@@ -6,7 +6,7 @@
   - **<span style="color: #f8f9fa; font-size: 15px">Needs a better homepage</span>**
   - **<span style="color: #f8f9fa; font-size: 15px">Needs a NavBar</span>**
     - <span style="color: #f8f9fa; font-size: 15px">The current one does not look really good and it just showcases the path. I can build something better </span>
-  - **<span style="color: #f8f9fa; font-size: 15px">I like the way in which it categorises the problems by problem category.</span>** 
+  - **<span style="color: #f8f9fa; font-size: 15px">I like the way in which it categorises the problems by problem category.</span>**
     - <span style="color: #f8f9fa; font-size: 15px">I’m not sure how I would do this but I want to replicate it. </span>
     - <span style="color: #f8f9fa; font-size: 15px">I do not like the way in which it displays them though. I feel the ID and Title parameters do not make much sense</span>
   - **<span style="color: #f8f9fa; font-size: 15px">I like the stats in the main page, will definitely copy that.</span>**
