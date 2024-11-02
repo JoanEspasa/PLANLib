@@ -21,5 +21,4 @@ links:
         text: "Dropdown Item 2"
       - url: "https://dropdownitem3.com"
         text: "Dropdown Item 3"
-
 ---
