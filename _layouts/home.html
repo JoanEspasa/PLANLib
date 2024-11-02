@@ -1,25 +1,58 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    {% include navbar.html %}
-    <header data-aos="fade-in" data-aos-delay="200" class="container-fluid col-12 mt-4 mt-lg-2 mb-5">
-      <div class="d-flex gap-1 align-items-center">
-        <h1 class="m-0">PLANLib</h1>
-        <i class="fa-solid fa-flask fs-3"></i>
-      </div>
-      <h4><i>A General-Usage Library for Constraint Problems</i></h4>
-    </header>
-  <main class="container-fluid col-12">
-    <div>
-      <h3 data-aos="fade-in" data-aos-delay="300" class="m-0">What is PLANLib?</h3>
-      <p data-aos="fade-in" data-aos-delay="300">
-        PLANLib is a general-purpose library web application designed to organize, display, reference, and
-        help solvers in anything related to <a style="text-decoration: none" class="external-reference text-reset pe-auto fw-bold" href="https://en.wikipedia.org/wiki/Automated_planning_and_scheduling">planning problems.</a> <br>
-        Here you will find:
-      </p>
+{% include head.html %}
+<body>
+{% include navbar.html %}
+<header
+        data-aos="fade-in"
+        data-aos-delay="200"
+        class="container-fluid col-11 mt-4 mt-lg-2 mb-3"
+>
+    <div class="d-flex gap-1 align-items-center">
+        <h1 class="m-0 fw-bold">{{ page.library-name }}</h1>
+        <i class="fa-solid {{ page.library-icon }} fs-3"></i>
     </div>
-  </main>
-  </body>
-  {% include scripts.html %}
+    <h4 class="mt-2"><i>{{ page.library-description }}</i></h4>
+</header>
+<main class="container-fluid col-11">
+    <div>
+        <h3 data-aos="fade-in" data-aos-delay="300" class="m-0 mb-3 fw-bold">
+            {{ page.block-1.main-question }}
+        </h3>
+        <p data-aos="fade-in" data-aos-delay="300">
+            {{ page.block-1.question-answer }}
+        </p>
+        <p data-aos="fade-in" data-aos-delay="300">
+            {{ page.block-1.spacer }}
+        </p>
+        <ul class="list-group col-lg-6 col-11">
+            <li class="list-group-item" data-aos="fade-in" data-aos-delay="400">{{ page.block-1.table-values[0] }}</li>
+            <li class="list-group-item" data-aos= "fade-in" data-aos-delay="500">{{ page.block-1.table-values[1] }}</li>
+            <li class="list-group-item" data-aos="fade-in" data-aos-delay="500">{{ page.block-1.table-values[2] }}</li>
+        </ul>
+    </div>
+    <div>
+        <h3 data-aos="fade-in" data-aos-delay="600" class="mt-4 mb-3 fw-bold">
+            {{ page.block-2.main-question }}
+        </h3>
+        <p data-aos="fade-in" data-aos-delay="700">
+            {{ page.block-2.question-answer }}
+        </p>
+    </div>
+    <div>
+        <h2 data-aos="fade-in" data-aos-delay="800" class="mt-4 mb-3 fw-bold text-center">
+            {{ page.stats.main-title }}
+        </h2>
+        <div class="d-flex gap-2 justify-content-center flex-column">
+            {% for stat in page.stats.stats-block %}
+            <div class="d-flex flex-column align-items-center gap-0">
+                <h4 style="letter-spacing: 1.5px" data-aos="fade-in" data-aos-delay="900" class="text-capitalize fw-bold s">{{ stat.name }}</h4>
+                <h2 class="fw-bold" data-aos="fade-in" data-aos-delay="1000"> {{ stat.value }}</h2>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+</body>
+{% include scripts.html %}
 </html>
