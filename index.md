@@ -7,20 +7,17 @@ description: "This library offers streamlined solutions for tackling planning an
 #NavBar Information/Links
 links:
   - type: "link"
-    url: "https://example.com"
-    text: "Example Link 1"
-  - type: "link"
-    url: "https://anotherexample.com"
-    text: "Example Link 2"
+    url: "#"
+    text: "Add a Problem"
   - type: "dropdown"
-    name: "Example Dropdown"
+    name: "Problems"
     items:
-      - url: "https://dropdownitem1.com"
-        text: "Dropdown Item 1"
-      - url: "https://dropdownitem2.com"
-        text: "Dropdown Item 2"
-      - url: "https://dropdownitem3.com"
-        text: "Dropdown Item 3"
+      - url: "#"
+        text: "Ordered by Category"
+      - url: "#"
+        text: "Ordered by Recency"
+      - url: "#"
+        text: "Ordered by Language"
 
 #Main Content
 library-name: PLANLib #name of the library as the title of the page.
@@ -44,10 +41,10 @@ block-2:
 stats:
   main-title: Library Data #Main title of the stats block
   stats-block:
-    - name: How many problems currently?
+    - name: Problems
       value: 0
-    - name: How many authors so far?
+    - name: Authors
       value: 0
-    - name: How many categories so far?
+    - name: Categories
       value: 0
 ---

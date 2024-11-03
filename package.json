@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "aos": "^2.3.4",
+    "fs": "^0.0.1-security",
     "js-yaml": "^4.1.0",
     "purgecss": "^6.0.0",
     "wowjs": "^1.1.3"
