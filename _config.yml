@@ -35,6 +35,11 @@ liquid:
   strict_variables: true
   strict_filters: true
 
+collections:
+  problems:
+    output: true
+
+
 exclude:
   - .husky
   - .github

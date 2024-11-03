@@ -12,6 +12,8 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
+      - url: ./problems/sort-by-id.html"
+        text: "Ordered by ID"
       - url: "#"
         text: "Ordered by Category"
       - url: "#"
