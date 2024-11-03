@@ -10,6 +10,8 @@ export default {
     "**/assets/js/bootstrap.bundle.min.js.map",
     "*.config.js",
     "test/**/*",
+    "cypress/**/*",
+    "_site/**/*"
   ],
   ...pluginJs.configs.recommended,
 };

@@ -1,7 +1,7 @@
 const {defineConfig } = require("cypress");
 
 module.exports = {
-  projectId: "PLANLib",
+  projectId: 'izzejh',
 
   e2e: {
     setupNodeEvents(on, config) {

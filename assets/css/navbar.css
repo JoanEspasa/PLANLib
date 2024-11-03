@@ -1,0 +1,30 @@
+/*
+MODIFICATIONS TO ADD COLOR AND ANIMATIONS TO THE NAVBAR
+ONLY APPLIED TO LARGE DISPLAYS NOT MEANT TO BE TACTILE.
+ */
+
+@media (width >= 992px) {
+  html[data-bs-theme="dark"] .nav-link:hover,
+  html[data-bs-theme="dark"] .dropdown-item:hover {
+    background-color: #fff;
+    color: black;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-radius 0.3s ease;
+  }
+
+  html[data-bs-theme="light"] .nav-link:hover,
+  html[data-bs-theme="light"] .dropdown-item:hover {
+    background-color: #33363b;
+    color: #fff;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-radius 0.3s ease;
+  }
+
+  .nav-link {
+    padding: 0.1em;
+  }
+}
