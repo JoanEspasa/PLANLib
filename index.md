@@ -26,20 +26,21 @@ links:
 library-name: PLANLib #name of the library as the title of the page.
 library-icon: fa-flask #icon that goes right next to the library name.
 library-description: A General-Usage Library for Constraint Problems #description of the library
-block-1: 
-    main-question: What is PLANLib? #First question on the main block of the page.
-    question-answer: PLANLib is a general-purpose library web application designed to
-      organize, display, reference, and help solvers in anything related to
-      planning problems. #Text that appears below the question.
-    spacer: "Here you will find:"
-    table-values: #values in the table below the first question block.
-      - A recollection of diverse planning problems submitted by users
-        or used during instances of the International Planning Competition (IPC)
-      - The different models, generators, instances, and variations that problems might have
-      - All relevant references for the problem, its sources and details.
+block-1:
+  main-question: What is PLANLib? #First question on the main block of the page.
+  question-answer:
+    PLANLib is a general-purpose library web application designed to
+    organize, display, reference, and help solvers in anything related to
+    planning problems. #Text that appears below the question.
+  spacer: "Here you will find:"
+  table-values: #values in the table below the first question block.
+    - A recollection of diverse planning problems submitted by users
+      or used during instances of the International Planning Competition (IPC)
+    - The different models, generators, instances, and variations that problems might have
+    - All relevant references for the problem, its sources and details.
 block-2:
-    main-question: What is the motivation behind PLANLib? #Second Question on the main page.
-    question-answer: The main motivation behind this project was to create a centralised platform that allows for planners from all over the world to contribute to the community with new problems and new solutions in the most streamlined fashion possible. <br> It also establishes a historical repository of past problems that might not be available elsewhere on the internet. #Answer to the past question. 
+  main-question: What is the motivation behind PLANLib? #Second Question on the main page.
+  question-answer: The main motivation behind this project was to create a centralised platform that allows for planners from all over the world to contribute to the community with new problems and new solutions in the most streamlined fashion possible. <br> It also establishes a historical repository of past problems that might not be available elsewhere on the internet. #Answer to the past question.
 stats:
   main-title: Library Data #Main title of the stats block
   stats-block:
@@ -49,5 +50,4 @@ stats:
       value: 0
     - name: How many categories so far?
       value: 0
-
 ---
