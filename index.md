@@ -12,7 +12,7 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: ./problems/sort-by-id.html"
+      - url: ./problems/"
         text: "Ordered by ID"
       - url: "#"
         text: "Ordered by Category"

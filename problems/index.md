@@ -1,7 +1,7 @@
 ---
-title: Sort By ID
+title: Problems | Main Page
 layout: problems-main-page
-description: Page containing the list of problems sorted by ID.
+description: Page containing the list of problems.
 links:
   - type: "link"
     url: "#"
