@@ -38,7 +38,16 @@ liquid:
 collections:
   problems:
     output: true
+  problem:
+    output: true
 
+page_gen-dirs: true
+
+page_gen:
+  - data: 'problems'
+    template: 'problem'
+    name: 'name'
+    dir: 'problem'
 
 exclude:
   - .husky
@@ -62,4 +71,4 @@ exclude:
 # Build settings
 theme:
 plugins:
-  - jekyll-postcss
+  - jekyll-datapage-generator

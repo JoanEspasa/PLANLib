@@ -1,0 +1,42 @@
+---
+links:
+  - type: "link"
+    url: "#"
+    text: "Add a Problem"
+  - type: "dropdown"
+    name: "Problems"
+    items:
+      - url: "./problems/problems_by_ID.html"
+        text: "Ordered by ID"
+      - url: "./problems/problems_by_category.html"
+        text: "Ordered by Category"
+      - url: "#"
+        text: "Ordered by Recency"
+      - url: "./problems/problems_by_language.html"
+        text: "Ordered by Language"
+---
+
+
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include navbar.html %}
+<h1>{{ page.name }}</h1>
+
+<p><strong>Year:</strong> {{ page.year }}</p>
+<p><strong>Author:</strong> {{ page.author }}</p>
+<p><strong>Description:</strong> {{ page.description }}</p>
+
+<h2>Variations</h2>
+<ul>
+    {% for variation in page.variations %}
+    <li>{{ variation.name }}: {{ variation.description }}</li>
+    {% endfor %}
+</ul>
+
+<p><a href="{{ page.modelPath }}">Model Path</a></p>
+<p><a href="{{ page.instancesPath }}">Instances Path</a></p>
+</body>
+{% include scripts.html %}
+</html>

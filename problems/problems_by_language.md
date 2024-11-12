@@ -1,7 +1,8 @@
 ---
-title: Problems | Main Page
+title: Problems | Category
 layout: problems-main-page
 description: Page containing the list of problems.
+sort-type: language
 links:
   - type: "link"
     url: "#"
@@ -9,12 +10,10 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: "#"
+      - url: "problems_by_id.html"
         text: "Ordered by ID"
-      - url: "#"
+      - url: "problems_by_category.html"
         text: "Ordered by Category"
       - url: "#"
         text: "Ordered by Recency"
-      - url: "#"
-        text: "Ordered by Language"
 ---

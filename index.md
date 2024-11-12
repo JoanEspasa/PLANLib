@@ -12,13 +12,13 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: ./problems/"
+      - url: "./problems/problems_by_ID.html"
         text: "Ordered by ID"
-      - url: "#"
+      - url: "./problems/problems_by_category.html"
         text: "Ordered by Category"
       - url: "#"
         text: "Ordered by Recency"
-      - url: "#"
+      - url: "./problems/problems_by_language.html"
         text: "Ordered by Language"
 
 #Main Content
