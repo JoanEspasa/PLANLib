@@ -20,6 +20,10 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
+group :jekyll_plugins do
+  gem 'jekyll-datapage-generator', '~> 1.4'
+end
+
 #BS5
 gem 'bootstrap', '~> 5.3.3'
 

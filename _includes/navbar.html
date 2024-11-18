@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+  <div style="min-width: 100vw" class="container-fluid">
     <div class="d-flex gap-1 gap-lg-0 align-items-center me-lg-4">
       <a class="navbar-brand m-1" href="/PLANLib/"><strong>PLANLib</strong></a>
       <i class="fa-solid fa-flask"></i>
@@ -30,7 +30,7 @@
           <a
             class="nav-link active rounded-4"
             aria-current="page"
-            href="{{ link.url }}"
+            href="{{ site.baseurl }}{{ link.url }}"
             >{{ link.text }}
           </a>
         </li>
@@ -47,7 +47,9 @@
           <ul class="dropdown-menu">
             {% for item in link.items %}
             <li>
-              <a class="dropdown-item" href="{{ item.url }}">{{ item.text }}</a>
+              <a class="dropdown-item" href="{{ site.baseurl }}{{ item.url }}"
+                >{{ item.text }}</a
+              >
             </li>
             {% endfor %}
           </ul>

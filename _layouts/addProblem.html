@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include navbar.html %}
+    <div class="container-fluid px-5">
+      <!-- Page Header -->
+      <header class="mb-4 text-center" data-aos="fade-in" data-aos-delay="100">
+        <h1 class="fw-bold">{{ page.header }}</h1>
+      </header>
+    </div>
+
+    <!-- Task Section -->
+    {% for task in page.tasks %}
+    <div
+      class="container-fluid px-5 mb-4"
+      data-aos="fade-in"
+      data-aos-delay="{{ forloop.index }}00"
+    >
+      <h2>Task {{ forloop.index }}: {{ task.title }}</h2>
+      <div class="instructions">
+        <ol class="ps-4">
+          {% for instruction in task.instructions %}
+          <li class="mb-2">{{ instruction }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+    {% endfor %}
+  </body>
+  {% include scripts.html %}
+</html>
