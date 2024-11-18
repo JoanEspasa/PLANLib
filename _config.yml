@@ -41,13 +41,14 @@ collections:
   problem:
     output: true
 
-page_gen-dirs: true
+page_gen-dirs: false
 
 page_gen:
   - data: 'problems'
     template: 'problem'
     name: 'name'
     dir: 'problem'
+
 
 exclude:
   - .husky

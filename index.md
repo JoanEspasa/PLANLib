@@ -7,19 +7,17 @@ description: "This library offers streamlined solutions for tackling planning an
 #NavBar Information/Links
 links:
   - type: "link"
-    url: "#"
+    url: "/addProblem"
     text: "Add a Problem"
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: "./problems/problems_by_ID.html"
+      - url: "/problems/problems_by_ID.html"
         text: "Ordered by ID"
-      - url: "./problems/problems_by_category.html"
+      - url: "/problems/problems_by_category.html"
         text: "Ordered by Category"
-      - url: "#"
-        text: "Ordered by Recency"
-      - url: "./problems/problems_by_language.html"
-        text: "Ordered by Language"
+      - url: "/problems/problems_by_category.html"
+        text: "Ordered by Category"  
 
 #Main Content
 library-name: PLANLib #name of the library as the title of the page.
