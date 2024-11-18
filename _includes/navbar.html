@@ -47,7 +47,9 @@
           <ul class="dropdown-menu">
             {% for item in link.items %}
             <li>
-              <a class="dropdown-item" href="{{ site.baseurl }}{{ item.url }}">{{ item.text }}</a>
+              <a class="dropdown-item" href="{{ site.baseurl }}{{ item.url }}"
+                >{{ item.text }}</a
+              >
             </li>
             {% endfor %}
           </ul>

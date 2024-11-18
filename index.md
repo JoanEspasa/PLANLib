@@ -17,7 +17,7 @@ links:
       - url: "/problems/problems_by_category.html"
         text: "Ordered by Category"
       - url: "/problems/problems_by_category.html"
-        text: "Ordered by Category"  
+        text: "Ordered by Category"
 
 #Main Content
 library-name: PLANLib #name of the library as the title of the page.

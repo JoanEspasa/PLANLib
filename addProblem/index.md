@@ -9,26 +9,21 @@ header: "How to request a new problem?"
 
 #NavBar Information/Links
 links:
-- type: "link"
-  url: "/addProblem"
-  text: "Add a Problem"
-- type: "dropdown"
-  name: "Problems"
-  items:
-    - url: "/problems/problems_by_ID.html"
-      text: "Ordered by ID"
-    - url: "/problems/problems_by_category.html"
-      text: "Ordered by Category"
-    - url: "/problems/problems_by_language.html"
-      text: "Ordered by Language"  
-      
-#Instructions for the Problem Adding 
+  - type: "link"
+    url: "/addProblem"
+    text: "Add a Problem"
+  - type: "dropdown"
+    name: "Problems"
+    items:
+      - url: "/problems/problems_by_ID.html"
+        text: "Ordered by ID"
+      - url: "/problems/problems_by_category.html"
+        text: "Ordered by Category"
+      - url: "/problems/problems_by_language.html"
+        text: "Ordered by Language"
+
+#Instructions for the Problem Adding
 tasks:
-  - title: "Preparation"
-    instructions:
-        - "Gather all necessary tools and materials."
-        - "Set up your workspace in a quiet area."
-        - "Read the instructions thoroughly."
   - title: "Preparation"
     instructions:
       - "Gather all necessary tools and materials."
@@ -38,7 +33,10 @@ tasks:
     instructions:
       - "Gather all necessary tools and materials."
       - "Set up your workspace in a quiet area."
-      - "Read the instructions thoroughly."      
-    
-
+      - "Read the instructions thoroughly."
+  - title: "Preparation"
+    instructions:
+      - "Gather all necessary tools and materials."
+      - "Set up your workspace in a quiet area."
+      - "Read the instructions thoroughly."
 ---
