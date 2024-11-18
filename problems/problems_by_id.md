@@ -10,10 +10,8 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: "problems_by_category.html"
+      - url: "/problems/problems_by_category.html"
         text: "Ordered by Category"
-      - url: "#"
-        text: "Ordered by Recency"
-      - url: "problems_by_language.html"
+      - url: "/problems/problems_by_category.html"
         text: "Ordered by Language"
 ---

@@ -15,7 +15,7 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: "/problems/problems_by_ID.html"
+      - url: "/problems/problems_by_id.html"
         text: "Ordered by ID"
       - url: "/problems/problems_by_category.html"
         text: "Ordered by Category"
