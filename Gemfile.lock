@@ -350,6 +350,7 @@ DEPENDENCIES
   github-pages
   html-proofer
   http_parser.rb (~> 0.6.0)
+  jekyll (= 3.10.0)
   jekyll-datapage-generator (~> 1.4)
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
