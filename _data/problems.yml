@@ -1,5 +1,5 @@
 - name: Barman
-  url-name: Barman
+  url-name: barman
   year: 2011
   ID: "001"
   date: 8/11/2024 18:52:08
@@ -36,7 +36,7 @@
   path: random
 
 - name: Elevator
-  url-name: Elevator
+  url-name: elevator
   year: 2011
   ID: "002"
   date: 8/11/2024 18:52:08
