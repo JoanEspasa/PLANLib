@@ -1,9 +1,9 @@
 - name: Barman
+  url-name: Barman
   year: 2011
   ID: "001"
   date: 8/11/2024 18:52:08
   author: Sergio Jimenez Celorrio
-  slug: barman
   category: //
   language: //
   description: >
@@ -36,10 +36,10 @@
   path: random
 
 - name: Elevator
+  url-name: Elevator
   year: 2011
   ID: "002"
   date: 8/11/2024 18:52:08
-  slug: elevator
   category: //
   language: //
   description: >
@@ -60,10 +60,10 @@
     - name: Sequential & Multicore
       description: //
 - name: Match Cellar
+  url-name: match-cellar
   year: 2011
   ID: "003"
   date: 8/11/2024 18:52:08
-  slug: match-cellar
   category: //
   language: //
   description: "Domain is inspired by a paper by Long and Fox. The main feature of this domain is that a lighted match is concurrently required to fix a fuse."

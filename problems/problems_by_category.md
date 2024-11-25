@@ -5,7 +5,7 @@ description: Page containing the list of problems.
 sort-type: category
 links:
   - type: "link"
-    url: "#"
+    url: "/addProblem/"
     text: "Add a Problem"
   - type: "dropdown"
     name: "Problems"
