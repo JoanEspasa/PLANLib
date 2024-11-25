@@ -72,4 +72,4 @@ exclude:
 # Build settings
 theme:
 plugins:
-  - jekyll-datapage-generator
+  - ./_plugins/jekyll-datapage-generator.rb

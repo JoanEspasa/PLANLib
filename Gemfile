@@ -8,15 +8,12 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 #
-gem "jekyll", "3.10.0" # Replace x.y.z with the desired Jekyll version
+gem "jekyll", "4.3.4" # Replace x.y.z with the desired Jekyll version
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
-platforms :mingw, :x64_mingw, :mswin, :jruby do
+group :jekyll_plugins do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
   gem 'jekyll-datapage-generator', '~> 1.4'
@@ -25,7 +22,4 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "webrick", "~> 1.8"
   gem 'html-proofer'
 end
-
-
-
 
