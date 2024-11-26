@@ -41,15 +41,6 @@ collections:
   problem:
     output: true
 
-page_gen-dirs: false
-
-page_gen:
-  - data: 'problems'
-    template: 'problem'
-    name: 'name'
-    dir: 'problem'
-
-
 exclude:
   - .husky
   - .github
@@ -71,5 +62,3 @@ exclude:
 
 # Build settings
 theme:
-plugins:
-  - ./_plugins/jekyll-datapage-generator.rb

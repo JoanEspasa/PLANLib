@@ -16,7 +16,6 @@ gem "jekyll", "4.3.4" # Replace x.y.z with the desired Jekyll version
 group :jekyll_plugins do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
-  gem 'jekyll-datapage-generator', '~> 1.4'
   gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
   gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
   gem "webrick", "~> 1.8"

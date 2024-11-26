@@ -13,7 +13,7 @@
           <span style="text-transform: capitalize">{{ sort_type }}</span>
         </strong>
       </h1>
-      {% assign problems_by_id = site.data.problems | sort: sort_type %}
+      {% assign problems_by_id = site.problem | sort: sort_type %}
 
       <div class="table-responsive">
         <table
