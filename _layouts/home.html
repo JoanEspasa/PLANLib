@@ -1,105 +1,136 @@
+<!-- The unique authors counter -->
+{% assign unique_authors_count = site.problem | map: 'author' | uniq | size %}
+
+<!-- The problems counter -->
+{% assign problem_count = site.problem | size %}
+
+<!-- The unique categories counter -->
+{% assign unique_category_count = site.problem | map: 'category' | uniq | size %}
+
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
-  <body class="pb-4">
-    {% include navbar.html %}
-    <header
-      data-aos="fade-in"
-      data-aos-once="true"
-      data-aos-delay="200"
-      class="container-fluid col-11 mt-4 mt-lg-2 mb-3"
-    >
-      <div class="d-flex gap-1 align-items-center">
+{% include head.html %}
+<body class="pb-4">
+{% include navbar.html %}
+<header
+        data-aos="fade-in"
+        data-aos-once="true"
+        data-aos-delay="200"
+        class="container-fluid col-11 mt-4 mt-lg-2 mb-3"
+>
+    <div class="d-flex gap-1 align-items-center">
         <h1 id="library-name" class="m-0 fw-bold">{{ page.library-name }}</h1>
         <i class="fa-solid {{ page.library-icon }} fs-3"></i>
-      </div>
-      <h4 class="mt-2"><i>{{ page.library-description }}</i></h4>
-    </header>
-    <main class="container-fluid col-11">
-      <div>
+    </div>
+    <h4 class="mt-2"><i>{{ page.library-description }}</i></h4>
+</header>
+<main class="container-fluid col-11">
+    <div>
         <h3
-          data-aos="fade-in"
-          data-aos-once="true"
-          data-aos-delay="300"
-          class="m-0 mb-3 fw-bold"
+                data-aos="fade-in"
+                data-aos-once="true"
+                data-aos-delay="300"
+                class="m-0 mb-3 fw-bold"
         >
-          {{ page.block-1.main-question }}
+            {{ page.block-1.main-question }}
         </h3>
         <p data-aos="fade-in" data-aos-once="true" data-aos-delay="300">
-          {{ page.block-1.question-answer }}
+            {{ page.block-1.question-answer }}
         </p>
         <p data-aos="fade-in" data-aos-once="true" data-aos-delay="300">
-          {{ page.block-1.spacer }}
+            {{ page.block-1.spacer }}
         </p>
         <ul class="list-group col-lg-6 col-11">
-          <li
-            class="list-group-item"
-            data-aos-once="true"
-            data-aos="fade-in"
-            data-aos-delay="400"
-          >
-            {{ page.block-1.table-values[0] }}
-          </li>
-          <li
-            class="list-group-item"
-            data-aos="fade-in"
-            data-aos-once="true"
-            data-aos-delay="500"
-          >
-            {{ page.block-1.table-values[1] }}
-          </li>
-          <li
-            class="list-group-item"
-            data-aos="fade-in"
-            data-aos-once="true"
-            data-aos-delay="500"
-          >
-            {{ page.block-1.table-values[2] }}
-          </li>
+            <li
+                    class="list-group-item"
+                    data-aos-once="true"
+                    data-aos="fade-in"
+                    data-aos-delay="400"
+            >
+                {{ page.block-1.table-values[0] }}
+            </li>
+            <li
+                    class="list-group-item"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-delay="500"
+            >
+                {{ page.block-1.table-values[1] }}
+            </li>
+            <li
+                    class="list-group-item"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-delay="500"
+            >
+                {{ page.block-1.table-values[2] }}
+            </li>
         </ul>
-      </div>
-      <div>
+    </div>
+    <div>
         <h3
-          data-aos="fade-in"
-          data-aos-delay="600"
-          data-aos-once="true"
-          class="mt-4 mb-3 fw-bold"
+                data-aos="fade-in"
+                data-aos-delay="600"
+                data-aos-once="true"
+                class="mt-4 mb-3 fw-bold"
         >
-          {{ page.block-2.main-question }}
+            {{ page.block-2.main-question }}
         </h3>
         <p data-aos="fade-in" data-aos-once="true" data-aos-delay="700">
-          {{ page.block-2.question-answer }}
+            {{ page.block-2.question-answer }}
         </p>
-      </div>
-      <div>
+    </div>
+    <div>
         <h2
-          data-aos="fade-in"
-          data-aos-delay="800"
-          class="mt-4 mb-3 fw-bold text-center"
-          data-aos-once="true"
+                data-aos="fade-in"
+                data-aos-delay="800"
+                class="mt-4 mb-3 fw-bold text-center"
+                data-aos-once="true"
         >
-          {{ page.stats.main-title }}
+            {{ page.stats.main-title }}
         </h2>
         <div
-          class="d-flex gap-2 justify-content-center align-items-center flex-wrap"
+                class="d-flex gap-2 justify-content-center align-items-center flex-wrap"
         >
-          {% for stat in page.stats.stats-block %}
-          <div
-            data-aos="fade-in"
-            data-aos-once="true"
-            data-aos-delay="1000"
-            data-aos-anchor="main"
-            class="d-flex flex-column align-items-center gap-2 p-3 border rounded shadow-sm col-9 col-lg-3"
-          >
-            <h4 class="fw-bolder text-center">{{ stat.name }}</h4>
-            <h2 style="color: rgb(27, 210, 184)" class="fw-bold text-center">
-              {{ stat.value }}
-            </h2>
-          </div>
-          {% endfor %}
+            <div
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-delay="1000"
+                    data-aos-anchor="main"
+                    class="d-flex flex-column align-items-center gap-2 p-3 border rounded shadow-sm col-9 col-lg-3"
+            >
+                <h4 class="fw-bolder text-center">Problems</h4>
+                <h2 style="color: rgb(27, 210, 184)" class="fw-bold text-center">
+                    {{ problem_count }}
+                </h2>
+            </div>
+            <div
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-delay="1000"
+                    data-aos-anchor="main"
+                    class="d-flex flex-column align-items-center gap-2 p-3 border rounded shadow-sm col-9 col-lg-3"
+            >
+                <h4 class="fw-bolder text-center">Authors</h4>
+                <h2 style="color: rgb(27, 210, 184)" class="fw-bold text-center">
+                    {{ unique_authors_count }}
+                </h2>
+            </div>
+            <div
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                    data-aos-delay="1000"
+                    data-aos-anchor="main"
+                    class="d-flex flex-column align-items-center gap-2 p-3 border rounded shadow-sm col-9 col-lg-3"
+            >
+                <h4 class="fw-bolder text-center">Categories</h4>
+                <h2 style="color: rgb(27, 210, 184)" class="fw-bold text-center">
+                    {{ unique_category_count }}
+                </h2>
+            </div>
         </div>
-      </div>
-    </main>
-  </body>
-  {% include scripts.html %}
+    </div>
+</main>
+</body>
+{% include scripts.html %}
 </html>

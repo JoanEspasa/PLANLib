@@ -42,7 +42,7 @@ stats:
   main-title: Library Data #Main title of the stats block
   stats-block:
     - name: Problems
-      value: 0
+      value: unique_authors_count
     - name: Authors
       value: 0
     - name: Categories

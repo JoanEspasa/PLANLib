@@ -13,9 +13,9 @@ modelPath: "../database/matchcellar/domain.pddl"
 instancesPath: "../database/matchcellar/instances.zip"
 source: "https://github.com/potassco/pddl-instances/tree/master/ipc-2011/domains/match-cellar-temporal-satisficing"
 variations:
-    - name: Temporal & Satisficing
-      description: null
-      path: random
+  - name: Temporal & Satisficing
+    description: null
+    path: random
 links:
   - type: "link"
     url: "/addProblem/"
