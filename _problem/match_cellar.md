@@ -5,7 +5,7 @@ name: Match Cellar
 url-name: match-cellar
 year: 2011
 ID: "003"
-category: 
+category:
   - "Temporal"
   - "Satisficing"
 language: PDDL

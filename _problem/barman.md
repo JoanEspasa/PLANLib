@@ -6,7 +6,7 @@ url-name: barman
 year: 2011
 ID: "001"
 author: Sergio Jimenez Celorrio
-category: 
+category:
   - "Sequential"
   - "Multi-Core"
   - "Satisficing"

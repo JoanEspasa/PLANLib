@@ -6,7 +6,7 @@ url-name: elevator
 year: 2011
 ID: "002"
 date: 8/11/2024 18:52:08
-category: 
+category:
   - "Sequential"
   - "Multi-Core"
   - "Optimal"
