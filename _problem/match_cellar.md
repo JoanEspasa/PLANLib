@@ -5,8 +5,10 @@ name: Match Cellar
 url-name: match-cellar
 year: 2011
 ID: "003"
-category: //
-language: //
+category: 
+  - "Temporal"
+  - "Satisficing"
+language: PDDL
 description: "Domain is inspired by a paper by Long and Fox. The main feature of this domain is that a lighted match is concurrently required to fix a fuse."
 author: Bharat Ranjan Kavuluri
 modelPath: "../database/matchcellar/domain.pddl"
@@ -23,7 +25,7 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: "/problems/problems_by_idnp.html"
+      - url: "/problems/problems_by_id.html"
         text: "Ordered by ID"
       - url: "/problems/problems_by_category.html"
         text: "Ordered by Category"

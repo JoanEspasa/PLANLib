@@ -1,8 +1,7 @@
 ---
 title: Problems | ID
-layout: problems-main-page
+layout: problems_by_id
 description: Page containing the list of problems.
-sort-type: ID
 links:
   - type: "link"
     url: "/addProblem/"

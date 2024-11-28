@@ -6,8 +6,12 @@ url-name: barman
 year: 2011
 ID: "001"
 author: Sergio Jimenez Celorrio
-category: //
-language: //
+category: 
+  - "Sequential"
+  - "Multi-Core"
+  - "Satisficing"
+  - "Optimal"
+language: PDDL
 description: >
   In this domain, there is a robot barman that manipulates drink dispensers, glasses, and a shaker.
   The goal is to find a plan of the robot's actions that serves a desired set of drinks. In this
@@ -43,7 +47,7 @@ links:
   - type: "dropdown"
     name: "Problems"
     items:
-      - url: "/problems/problems_by_idnp.html"
+      - url: "/problems/problems_by_id.html"
         text: "Ordered by ID"
       - url: "/problems/problems_by_category.html"
         text: "Ordered by Category"

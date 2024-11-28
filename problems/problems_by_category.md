@@ -1,6 +1,6 @@
 ---
 title: Problems | Category
-layout: problems-main-page
+layout: problems-by
 description: Page containing the list of problems.
 sort-type: category
 links:
