@@ -33,7 +33,11 @@
             {% for problem in problems_by_id %}
             <tr data-aos="fade-in" data-aos-delay="{{ forloop.index }}00">
               <td><strong>{{ problem.ID }}</strong></td>
-              <td><a href="{{ site.baseurl }}/problem/{{ problem.url-name }}">{{ problem.name }}</a></td>
+              <td>
+                <a href="{{ site.baseurl }}/problem/{{ problem.url-name }}"
+                  >{{ problem.name }}</a
+                >
+              </td>
               <td>{{ problem.category | join: "<br />" }}</td>
               <td>{{ problem.language }}</td>
               <td>{{ problem.author }}</td>
