@@ -1,47 +1,47 @@
 <!doctype html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    {% include navbar.html %}
-    <div class="container-fluid px-3" data-aos="fade-up">
-      <h1 class="text-capitalize" data-aos="fade-right">
+{% include head.html %}
+<body>
+{% include navbar.html %}
+<div class="container-fluid px-3" data-aos="fade-up">
+    <h1 class="text-capitalize" data-aos="fade-right">
         {{ page.name | replace: "-"," " | split: '.' | slice: 0 }}
-      </h1>
-      <p data-aos="fade-left">
+    </h1>
+    <p data-aos="fade-left">
         <strong>Year:</strong> <span>{{ page.year }}</span>
-      </p>
-      <p data-aos="fade-right">
+    </p>
+    <p data-aos="fade-right">
         <strong>Author:</strong> <span>{{ page.author }}</span>
-      </p>
-      <p data-aos="fade-left">
+    </p>
+    <p data-aos="fade-left">
         <strong>Description:</strong> <span>{{ page.description }}</span>
-      </p>
+    </p>
 
-      <h2 class="mt-4" data-aos="fade-up">Variations:</h2>
-      <ul class="list-group mb-4" data-aos="fade-up">
+    <h2 class="mt-4" data-aos="fade-up">Variations:</h2>
+    <ul class="list-group mb-4" data-aos="fade-up">
         {% for variation in page.variations %}
         <li class="list-group-item" data-aos="fade-up">
-          <span class="fw-bolder">{{ variation.name }}:</span> {{
-          variation.description }}
+            <span class="fw-bolder">{{ variation.name }}:</span> {{
+            variation.description }}
         </li>
         {% endfor %}
-      </ul>
-      <div class="d-flex justify-content-center" data-aos="fade-up">
+    </ul>
+    <div class="d-flex justify-content-center" data-aos="fade-up">
         <a class="btn btn-primary mx-2 shadow" href="{{ page.modelPath }}"
-          ><i class="fas fa-download me-2"></i>Model</a
+        ><i class="fas fa-download me-2"></i>Model</a
         >
         <a class="btn btn-secondary mx-2 shadow" href="{{ page.instancesPath }}"
-          ><i class="fas fa-download me-2"></i>Instances</a
+        ><i class="fas fa-download me-2"></i>Instances</a
         >
-      </div>
-      <pre
-        class="language-bib py-0 border-2 rounded-2"
-        style="
+    </div>
+    <pre
+            class="language-bib py-0 border-2 rounded-2"
+            style="
           width: fit-content !important;
           text-align: left;
           text-wrap: pretty;
         "
-      >
+    >
 <code class="language-bib">
 @misc&#123;planlib:prob{{ page.ID }},
   title = &#123;&#123;PLANLib&#125; Problem {{ page.ID }}: {{ page.name }}&#125;,
@@ -52,38 +52,37 @@
 &#125;
 </code>
 </pre>
-    </div>
-  </body>
-  {% include scripts.html %}
-  <script>
+</div>
+</body>
+{% include scripts.html %}
+<script>
     let link;
     document.addEventListener("DOMContentLoaded", () => {
-      const light = "{{ site.baseurl }}/assets/css/prism-css-light.css";
-      const dark = "{{ site.baseurl }}/assets/css/prism-css-dark.css";
-      let theme =
-        document.documentElement.getAttribute("data-bs-theme") === "dark"
-          ? dark
-          : light;
-      link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = theme;
-      document.head.appendChild(link);
-    });
-
+        const light = "{{ site.baseurl }}/assets/css/prism-css-light.css";
+        const dark = "{{ site.baseurl }}/assets/css/prism-css-dark.css";
+        let theme =
+            document.documentElement.getAttribute("data-bs-theme") === "dark"
+                ? dark
+                : light;
+        link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = theme;
+        document.head.appendChild(link);
+    })
     document.getElementById("darkModeSwitch").addEventListener("click", () => {
-      document.head.removeChild(link);
-      const light = "{{ site.baseurl }}/assets/css/prism-css-light.css";
-      const dark = "{{ site.baseurl }}/assets/css/prism-css-dark.css";
-      let theme =
-        document.documentElement.getAttribute("data-bs-theme") === "dark"
-          ? light
-          : dark;
-      link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = theme;
-      document.head.appendChild(link);
+        document.head.removeChild(link);
+        const light = "{{ site.baseurl }}/assets/css/prism-css-light.css";
+        const dark = "{{ site.baseurl }}/assets/css/prism-css-dark.css";
+        let theme =
+            document.documentElement.getAttribute("data-bs-theme") === "dark"
+                ? light
+                : dark;
+        link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = theme;
+        document.head.appendChild(link);
     });
-  </script>
+</script>
 </html>
