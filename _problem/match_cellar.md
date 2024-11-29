@@ -2,7 +2,7 @@
 layout: problem
 title: Match Cellar | Problem
 name: Match Cellar
-url-name: match-cellar
+url-name: match_cellar
 year: 2011
 ID: "003"
 category:

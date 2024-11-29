@@ -39,7 +39,6 @@ variations:
       The goal is to find a plan of the robot's actions that serves a desired set of drinks. In this
       domain deletes of actions encode relevant knowledge given that robot hands can only grasp one
       object at a time and given that glasses need to be empty and clean to be filled.
-path: random
 links:
   - type: "link"
     url: "/addProblem/"

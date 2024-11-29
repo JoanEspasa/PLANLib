@@ -1,0 +1,20 @@
+---
+layout: none
+---
+[
+{% for problem in site.problem %}
+{% if problem.layout == "problem" %}
+{
+"title": "{{ problem.title | escape }}",
+"name": "{{ problem.name | escape }}",
+"id": "{{ problem.ID }}",
+"category": "{{ problem.category | join: ', ' | escape }}",
+"language": "{{ problem.language | escape }}",
+"description": "{{ problem.description | strip_html | strip_newlines | escape }}",
+"author": "{{ problem.author | escape }}",
+"year": "{{ problem.year }}",
+"url": "{{ problem.url | absolute_url }}"
+}{% if forloop.last == false %},{% endif %}
+{% endif %}
+{% endfor %}
+]

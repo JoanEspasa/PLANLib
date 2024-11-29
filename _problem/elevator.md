@@ -21,7 +21,6 @@ description: >
 modelPath: "../database/elevator/domain.pddl"
 instancesPath: "../database/elevator/instances.zip"
 author: "Unknown"
-path: random
 source: https://github.com/potassco/pddl-instances/tree/master/ipc-2011/domains/elevator-sequential-satisficing
 variations:
   - name: Sequential & Satisficing

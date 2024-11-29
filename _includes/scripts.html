@@ -1,6 +1,23 @@
 <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 <script src="{{ site.baseurl }}/assets/js/dark-mode.js"></script>
+<script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/prism.js"></script>
+
 <script>
   AOS.init();
+  SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{ site.baseurl }}/search.json', // Path to your search JSON file
+      searchResultTemplate: '<div><a href="{url}">{title}</a></div>',
+      noResultsText: 'No results found',
+      limit: 10,
+      fuzzy: false
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.1.0/prism-bibtex.js"
+        integrity="sha256-A5GMUmGHpY8mVpfcaRLQFeHtmdjZLumKBOMpf81FXX0="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </script>
