@@ -1,12 +1,12 @@
 (define (domain elevators-sequencedstrips)
   (:requirements :typing :action-costs)
-  (:types 	elevator - object
+  (:types 	elevator - object 
 			slow-elevator fast-elevator - elevator
    			passenger - object
           	count - object
          )
 
-(:predicates
+(:predicates 
 	(passenger-at ?person - passenger ?floor - count)
 	(boarded ?person - passenger ?lift - elevator)
 	(lift-at ?lift - elevator ?floor - count)
@@ -19,7 +19,7 @@
 
 (:functions (total-cost) - number
             (travel-slow ?f1 - count ?f2 - count) - number
-            (travel-fast ?f1 - count ?f2 - count) - number
+            (travel-fast ?f1 - count ?f2 - count) - number 
 )
 
 (:action move-up-slow
@@ -47,9 +47,10 @@
   :precondition (and  (lift-at ?lift ?f) (passenger-at ?p ?f) (passengers ?lift ?n1) (next ?n1 ?n2) (can-hold ?lift ?n2) )
   :effect (and (not (passenger-at ?p ?f)) (boarded ?p ?lift) (not (passengers ?lift ?n1)) (passengers ?lift ?n2) ))
 
-(:action leave
+(:action leave 
   :parameters (?p - passenger ?lift - elevator ?f - count ?n1 - count ?n2 - count)
   :precondition (and  (lift-at ?lift ?f) (boarded ?p ?lift) (passengers ?lift ?n1) (next ?n2 ?n1) )
   :effect (and (passenger-at ?p ?f) (not (boarded ?p ?lift)) (not (passengers ?lift ?n1)) (passengers ?lift ?n2) ))
-
+  
 )
+

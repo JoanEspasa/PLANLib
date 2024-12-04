@@ -5,7 +5,12 @@
     {% include navbar.html %}
 
     <div class="container-fluid my-5">
-      <h1 class="text-center mb-4" data-aos-delay="100" data-aos="fade-in" data-aos-once="true">
+      <h1
+        class="text-center mb-4"
+        data-aos-delay="100"
+        data-aos="fade-in"
+        data-aos-once="true"
+      >
         <strong
           >Problem List by
           <span style="text-transform: capitalize">ID</span>
@@ -31,7 +36,11 @@
           </thead>
           <tbody>
             {% for problem in problems_by_id %}
-            <tr data-aos="fade-in" data-aos-delay="{{ forloop.index }}00" data-aos-once="true">
+            <tr
+              data-aos="fade-in"
+              data-aos-delay="{{ forloop.index }}00"
+              data-aos-once="true"
+            >
               <td><strong>{{ problem.ID }}</strong></td>
               <td>
                 <a href="{{ site.baseurl }}/problem/{{ problem.url-name }}"

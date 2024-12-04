@@ -11,13 +11,12 @@ category:
 language: PDDL
 description: "Domain is inspired by a paper by Long and Fox. The main feature of this domain is that a lighted match is concurrently required to fix a fuse."
 author: Bharat Ranjan Kavuluri
-modelPath: "../database/matchcellar/domain.pddl"
-instancesPath: "../database/matchcellar/instances.zip"
 source: "https://github.com/potassco/pddl-instances/tree/master/ipc-2011/domains/match-cellar-temporal-satisficing"
 variations:
   - name: Temporal & Satisficing
-    description: null
-    path: random
+    description: "Domain is inspired by a paper by Long and Fox. The main feature of this domain is that a lighted match is concurrently required to fix a fuse."
+    modelPath: "../database/matchcellar/temporal-satisficing/domain.pddl"
+    instancesPath: "../database/matchcellar/temporal-satisficing/instances.zip"
 links:
   - type: "link"
     url: "/addProblem/"
