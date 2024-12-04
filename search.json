@@ -10,7 +10,7 @@ layout: none
 "id": "{{ problem.ID }}",
 "category": "{{ problem.category | join: ', ' | escape }}",
 "language": "{{ problem.language | escape }}",
-"description": "{{ problem.description | strip_html | strip_newlines | escape }}",
+"description": "{{ problem.description | strip_html | strip_newlines | escape | truncatewords: 20, '...' }}",
 "author": "{{ problem.author | escape }}",
 "year": "{{ problem.year }}",
 "url": "{{ problem.url | absolute_url }}"

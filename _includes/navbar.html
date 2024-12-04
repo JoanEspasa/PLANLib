@@ -78,17 +78,24 @@
             >Enable Dark Mode</label
           >
         </div>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            id="search-input"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <div id="results-container" class="mt-3 position-relative"></div>
+        <div class="w-75 form-container position-relative">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="search-input"
+              type="search"
+              placeholder="Problem Name"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div
+            id="results-container"
+            class="w-100 d-flex flex-column gap-1"
+          ></div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,8 +1,8 @@
 <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 <script src="{{ site.baseurl }}/assets/js/dark-mode.js"></script>
 <script src="{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/prism.js"></script>
+<script src="{{ site.baseurl }}/assets/js/search-bar.js"></script>
 
 <script>
   AOS.init();
@@ -10,8 +10,23 @@
     searchInput: document.getElementById("search-input"),
     resultsContainer: document.getElementById("results-container"),
     json: "{{ site.baseurl }}/search.json", // Path to your search JSON file
-    searchResultTemplate: '<div><a href="{url}">{title}</a></div>',
-    noResultsText: "No results found",
+    searchResultTemplate: `
+            <a class="text-decoration-none result-entry d-block" href="{url}">
+              <div class="d-flex flex-row justify-content-between align-items-center border-bottom p-3">
+                <div class="d-flex flex-column">
+                  <p class="mb-1 fw-semibold">{name}</p>
+                  <small class="text-muted">{description}</small>
+                </div>
+              </div>
+            </a>
+`,
+    noResultsText: `
+            <div class="d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded-3">
+              <i class="fa-solid fa-magnifying-glass text-muted fs-1 mb-3"></i>
+              <p class="mb-1 fw-semibold">No Problems Found</p>
+              <small class="text-muted">Try adjusting your search or check your spelling.</small>
+            </div>
+`,
     limit: 10,
     fuzzy: false,
   });
@@ -23,3 +38,6 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>
+<script>
+  themeSwitcher();
+</script>

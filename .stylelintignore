@@ -5,5 +5,6 @@ node_modules/
 **/assets/js/bootstrap.bundle.min.js
 **/assets/js/bootstrap.bundle.min.js.map
 **/assets/css/reset.css
+**/_site/**/**
 
 

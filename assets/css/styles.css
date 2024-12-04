@@ -1,15 +1,31 @@
-#results-container div {
-  margin: 10px 0;
-  padding: 10px;
+.result-container {
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: #fff;
+}
+
+.result-div {
   border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 10px;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+  background-color: #f9f9f9;
 }
 
-#results-container a {
-  text-decoration: none;
-  color: #333;
+@media (width >= 768px) {
+  #results-container {
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+  }
 }
 
-#results-container a:hover {
-  color: #007bff;
+.result-entry:hover .text-dark {
+  color: #0056b3;
 }
