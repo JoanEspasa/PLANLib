@@ -12,7 +12,7 @@
       parameter_name = parameter %} {% assign parameterized_problems =
       site.problem | where: parameter_key, parameter_name %} {% if
       parameterized_problems.size > 0 %}
-      <h1 class="text-center mb-4" data-aos-delay="100" data-aos="fade-in">
+      <h1 class="text-center mb-4" data-aos-delay="100" data-aos="fade-in" data-aos-once="true">
         <strong
           >Problem List by
           <span style="text-transform: capitalize"
@@ -20,7 +20,6 @@
           ></strong
         >
       </h1>
-
       <div class="table-responsive">
         <table
           class="table table-striped table-bordered table-hover table-responsive-sm"
@@ -38,7 +37,7 @@
           </thead>
           <tbody>
             {% for problem in parameterized_problems %}
-            <tr data-aos="fade-in" data-aos-delay="{{ forloop.index }}00">
+            <tr data-aos="fade-in" data-aos-delay="{{ forloop.index }}00" data-aos-once="true">
               <td><strong>{{ problem.ID }}</strong></td>
               <td>
                 <a href="{{ site.baseurl }}/problem/{{ problem.url-name }}"
@@ -49,7 +48,7 @@
               <td>{{ problem.language }}</td>
               <td>{{ problem.author }}</td>
               <td style="text-align: justify">
-                {{ problem.description | truncate: 150, "..." }}
+                {{ problem.description | truncate: 300, "..." }}
               </td>
               <td><a href="{{ problem.source }}">View Source</a></td>
             </tr>
